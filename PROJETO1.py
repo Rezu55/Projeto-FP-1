@@ -1,4 +1,4 @@
-#esta função devolve o valor mais alto da lista ou tuplo que foi inserida
+#esta funcao devolve o valor mais alto da lista ou tuplo que foi inserida
 def maximo(lista):
     if len(lista) == 0:
         return 0
@@ -10,9 +10,9 @@ def maximo(lista):
             
     return max_act
 
-#esta função devolve o indice do valor mais alto da lista ou tuplo que foi inserida
+#esta funcao devolve o indice do valor mais alto da lista ou tuplo que foi inserida
 #e de notar que devolve sempre uma lista com o indice mais alto e no caso de existir
-#dois maximos devolve os seus indices também em forma de lista
+#dois maximos devolve os seus indices tambem em forma de lista
 
 def max_indice(lista):
     if len(lista) == 0:
@@ -40,7 +40,7 @@ def mandatos(nr_mandatos, nr_votos):
             list_mandatos[i] = list_mandatos[i] + 1
             list_votos[i] = nr_votos[i] / (list_mandatos[i] + 1)
             
-        elif len(max_indice(list_votos)) >= 2:               #esta parte é para o caso de existirem empates.
+        elif len(max_indice(list_votos)) >= 2:               #esta parte e para o caso de existirem empates.
             list_indice = max_indice(list_votos)             #se o numero de votos inicial for igual da o mandato
             i = list_indice[0]                               #para a candidatura mais a direita
             for indice in range(len(list_indice)):
